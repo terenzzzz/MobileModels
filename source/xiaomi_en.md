@@ -1967,14 +1967,9 @@
 
 ## Others
 
-**Mi Watch (`baiji`):**
+**`] Mi Watch (`baiji`):**
 
 `XMWT01`: Mi Watch
 
-**Xiaomi Mijia Translator (`FYJ01QP`):**
 
-`FYJ01QP`: Xiaomi Mijia Translator
 
-**[`K91`] Xiaomi CyberDog:**
-
-`21051191C`: Xiaomi CyberDog Bio-inspired Quadruped Robot

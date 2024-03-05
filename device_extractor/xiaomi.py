@@ -1,8 +1,8 @@
 import re
 
-def extract_google_models(file_path):
+def extract_xiaomi_models(file_path):
     # Define a regular expression pattern to extract model numbers
-    pattern = r"\*\*([^`]+)\(`"
+    pattern = r"\]\s*([^()]+)"
 
     # Open the file and read its contents
     with open(file_path, "r") as file:
@@ -20,18 +20,18 @@ def extract_google_models(file_path):
 
     for model in matches:
         model = model.strip()
-        if "Tablet" in model:
+        if "Pad" in model:
             pad.append(model)
         elif "Watch" in model:
             watch.append(model)
-        elif "Pixel" in model:
+        else:
             phone.append(model)
 
     # Return the lists for each device type
     return phone,pad,watch
 
 # Example usage:
-# phone,pad,watch = extract_google_models("./source/google.md")
+# phone, pad, watch = extract_xiaomi_models("./source/xiaomi_en.md")
 
 # print("Phone:", phone)
 # print()
